@@ -3150,6 +3150,7 @@
 	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/2.json" />
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
 
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link rel="canonical" href="index.html" />
 	<link rel='shortlink' href='index.html' />
 	<link rel="alternate" type="application/json+oembed"
@@ -3184,7 +3185,55 @@
 
 	<a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
 		Skip to content</a>
+		<!-- modal section -->
+		<div id="myModal" class="modal" style="background-color: #0b0b0b; padding: 2rem;">
+			<div class="mod_content">
+				<p style="color: #fff; font-size: 17px; text-align: center; font-family: evermore, Verdana, Arial, sans-serif;">
+					Excited to Enter POP SMOKE's Realm ?
+				</p>
+				</div>
+				<div class="flex_dis" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+					<button id="yesButton">Yes</button>
+					<button id="noButton">No</button>
+				</div>
+			</div>
+		</div>
+		<audio style="opacity: 1" id="closingAudio" src="/god.mp3"></audio>
+		<script>
+			window.onload = function () {
+				var modal = document.getElementById("myModal");
+				modal.style.display = "block";
 
+				// Close the modal when clicking outside of it
+				window.onclick = function (event) {
+					var closeButton = document.getElementById("closeModal");
+					var closingAudio = document.getElementById("closingAudio");
+
+					const yesButton = document.getElementById("yesButton");
+					const noButton = document.getElementById("noButton");
+
+					if (yesButton) {
+						modal.style.display = "none";
+						closingAudio.play();
+					} else {
+						if (noButton) {
+							modal.style.display = "none";
+							closingAudio.play();
+						}
+					}
+
+					// yesButton.addEventListener("click", function () {
+					//   modal.style.display = "none";
+					//   closingAudio.play();
+					// });
+
+					// // Hide the modal when "No" is clicked
+					// noButton.addEventListener("click", function () {
+					//   modal.style.display = "none";
+					// });
+				};
+			};
+		</script>
 	<div class="hfeed site" id="page">
 		<div id="content" class="site-content">
 			<div class="ast-container">
@@ -4293,6 +4342,30 @@ uabb-photo-align-center uabb-photo-mob-align-center" itemscope itemtype="https:/
 															</div>
 														</div>
 													</div>
+													<div class="fl-col fl-node-g9pwrfk230ot fl-col-small"
+														data-node="g9pwrfk230ot">
+														<div class="fl-col-content fl-node-content">
+															<div class="fl-module fl-module-photo fl-node-0s58m4ena7ty"
+																data-node="0s58m4ena7ty">
+																<div class="fl-module-content fl-node-content">
+																	<div class="fl-photo fl-photo-align-center"
+																		itemscope
+																		itemtype="https://schema.org/ImageObject">
+																		<div class="fl-photo-content fl-photo-img-webp">
+																			<a href="https://x.com/popsmoke_solana"
+																				target="_self" itemprop="url">
+																				<img decoding="async" loading="lazy"
+																					class="fl-photo-img wp-image-131 size-full"
+																					src="wp-content/uploads/2023/04/t-1.webp"
+																					alt="t" itemprop="image" height="85"
+																					width="85" title="t" />
+																			</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
 
 												</div>
 											</div>
@@ -4324,6 +4397,7 @@ uabb-photo-align-center uabb-photo-mob-align-center" itemscope itemtype="https:/
 											</div>
 										</div>
 									</div>
+									
 								</div>
 								<div class="uabb-js-breakpoint" style="display: none;"></div>
 
